@@ -1,0 +1,23 @@
+body{
+  background-color:#666;
+}
+div.main{
+  width:1200px;
+  margin: 50px auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  border:3px solid #ccc;
+  background-color:#fff;
+}
+
+div>img{
+  width:500px;
+}
+div>p{
+  width:500px;
+  font-size:25px;
+}
+div>p>select{
+  font-size:30px;
+}

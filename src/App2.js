@@ -1,5 +1,5 @@
 import React from 'react'
-// 조건부 렌더링1
+
 class App extends React.Component {
   handleClick() {
     console.log('this is:', this);

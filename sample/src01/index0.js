@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// 조건문 : 삼항연산자
 function Black(){
   return(
     <p>

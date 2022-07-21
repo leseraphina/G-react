@@ -1,31 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// 조건문 : 삼항연산자
-function Black(){
+function Black(props){
   return(
     <p>
       Black 입니다.
     </p>
   )
 }
-function White(){
+function White(props){
   return (
     <p>White 입니다.</p>
   )
 }
 function App(props){
-  return (
-    // <Black />
-    props.title === 'black' ? <Black /> : <White />
-  )
+const bool = props.title
+if(bool){
+  return <White />
+}
+else{
+  return <Black />
+}
+
 }
 
 // 출력
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App title="white" />
+    <App title={false} />
   </React.StrictMode>
 );
-
